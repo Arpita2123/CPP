@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+
+
+class ComplexNumber{
+     private:
+        int real , imaginary;
+
+     public:
+
+      ComplexNumber( int r = 0 ,int i = 0)
+      {
+          real  = r; 
+          imaginary = i; 
+       }
+  
+       void input ()
+       {
+          cout << "Enter the real number:"<< endl;
+          cin >> real;
+           cout << "Enter the imaginary number : "<< endl;
+         cin >>imaginary;
+          
+       } 
+
+      
+                   
+
+      ComplexNumber operator +(ComplexNumber const& obj)
+      {
+          ComplexNumber result;
+          result.real = real + obj.real;
+          result.imaginary = imaginary + obj.imaginary;
+          return result;
+      }
+
+      void print()
+      {
+            cout << real << " + i " << imaginary ;
+       }
+};
+
+int main()
+{ 
+     ComplexNumber c1 ,c2 ;
+
+     
+     c1.input();
+
+     
+     c2.input ();
+     
+     ComplexNumber c3  = c1 + c2;
+     cout << "Sum = \t";
+     c3.print();  
+
+}
