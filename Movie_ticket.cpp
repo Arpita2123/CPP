@@ -27,8 +27,9 @@ int main()
 
     cout << "Movie Name :" << name << endl ;
     cout << "Number of ticket sold :" << total << endl ;
+    cout << fixed << setprecision(2);
     cout << "Gross amount :" <<gross_amount << endl ;
-    cout << "Persentage of gross amount donated :" <<donation_per << endl ;
+    cout << "Persentage of gross amount donated :" <<donation_per << "%" << endl ;
     cout << " Amount donated :" << deposit_amount << endl ;
     cout << "Net sale :" << amount << endl  ;
 
