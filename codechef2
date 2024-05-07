@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string S = "proceeding"; // Input string
+    // Retrieve the 7th character (index 6 since indexing starts from 0)
+    char luckyLetter = S[6];
+
+    cout << luckyLetter << endl;
+
+    return 0;
+}
