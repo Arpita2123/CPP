@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+    int x , y ;
+    cin >> x >> y ;
+    int total_calories;
+    total_calories = x*y;
+    cout << total_calories<< endl;
+    return 0;
+}
